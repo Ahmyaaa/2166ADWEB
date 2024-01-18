@@ -1,0 +1,28 @@
+<h2>Price List</h2> 
+
+
+<hr>
+
+
+
+<div class="container" *ngIf="showText"> 
+    <table class="table table-striped table-bordered" border = "1"> 
+        <thead> 
+            <tr> 
+                <th>Product</th> 
+                <th>Price</th> 
+            </tr> 
+        </thead> 
+            <tbody> 
+                <tr *ngFor="let user of staff"> 
+                <td>{{user.product}}</td> 
+                <td>{{user.price}}</td>  
+            </tr> 
+            </tbody> 
+    </table> 
+</div> 
+
+<button (click)="toggleText()">
+    {{showText ? 'Hide Text' : 'Show Text'}}
+</button>
+

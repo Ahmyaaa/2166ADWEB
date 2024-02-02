@@ -1,0 +1,49 @@
+<div id="top"></div>
+
+<header class="bg-dark py-5" 
+        style="background-image: url(../../assets/about.png); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        max-width: 100%;
+        height: auto;">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-white" style="background-color: rgb(0, 0, 0, 0.5); padding: 30px;">
+            <h1 class="display-4 fw-bolder">About the Organization</h1>
+            <p class="lead fw-normal text-white-50 mb-0">Learn how the team and committee leadership are shaping the world of 
+                conferences, get the latest conference news and updates on our blog, 
+                and contact us for guidance.</p>
+        </div>
+    </div>
+  </header>
+
+  <div class="about-content">
+    <h1>About</h1>
+    
+    <p>
+        We believe in transparency, cooperation globally, and the free exchange of talent and ideas. 
+        A forum for the sharing of these technical and humanitarian discussions is given for meetings, 
+        conferences and other events. We are also committed to creating a secure, constructive and 
+        supportive atmosphere for all participants in conferences, activities and meetings who participate 
+        in these discussions with us.
+    </p>
+
+    <button class="button-gift" (click)="showPopup()">
+        Click here to get a FREE Gift!
+    </button>
+
+    
+    <div class="popup" *ngIf="showPopupMessage">
+        <div class="popup-content">
+        <p>You got the FREE Gift!</p>
+        <button (click)="closePopup()">Close</button>
+        </div>
+    </div>
+    
+
+    <p>
+        Conferences are a part of the legacy of this organization and continue today to be a catalyst for 
+        creativity. We are committed to developing strategies that support and expand the conference 
+        activities throughout the world.
+    </p>
+  </div>

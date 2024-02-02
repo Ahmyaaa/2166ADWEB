@@ -1,0 +1,35 @@
+<div id="top"></div>
+
+<header class="bg-dark py-5" 
+        style="background-image: url(../../assets/join.png); 
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        max-width: 100%;
+        height: auto;">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-white" style="background-color: rgb(0, 0, 0, 0.5); padding: 30px;">
+            <h1 class="display-4 fw-bolder">Join Our Mailing List!</h1>
+            <p class="lead fw-normal text-white-50 mb-0">Join and meet thousands academicians around the globe and stay hydrated!</p>
+        </div>
+    </div>
+  </header>
+
+  <h1 style="margin-top: 20px; margin-left: 20px">Fill the form below:</h1>
+
+  <div class="two-binding-form">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" [(ngModel)]="formData.firstName"> <br>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" [(ngModel)]="formData.lastName" >
+    <p>Fullname: {{ formData.firstName }} {{ formData.lastName }}</p>
+  
+    <label for="email">Enter Email Address:</label>
+    <input type="email" id="email" [(ngModel)]="formData.email">
+    <p>Email: {{ formData.email }}</p>
+  
+    <label for="institution">Enter Institution/Affiliation:</label>
+    <input type="text" id="institution" [(ngModel)]="formData.institution">
+    <p>Academic Institution: {{ formData.institution }}</p>
+  </div>

@@ -1,0 +1,25 @@
+.about-content{
+    margin: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 18px;
+}
+
+.button-gift {
+    margin: 10px auto 30px auto;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .popup-content {
+    text-align: center;
+  }

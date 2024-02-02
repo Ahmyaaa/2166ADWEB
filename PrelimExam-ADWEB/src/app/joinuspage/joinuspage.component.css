@@ -1,0 +1,8 @@
+.two-binding-form {
+    margin: 30px;
+}
+
+.two-binding-form label, .two-binding-form input, .two-binding-form p {
+    margin-bottom: 10px; 
+    padding-right: 10px;
+}

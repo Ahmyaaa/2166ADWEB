@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>{{title}}</h1>
+<div>
+  <h1>text-format-pipes</h1>
+  Date with uppercase: {{presentDate| date: 'fullDate' | uppercase}} <br/>
+  Date with lowercase: {{presentDate| date: 'medium' | lowercase}} <br/>
+  name with uppercase: {{name | uppercase}} <br>
+</div>
+<br>
+
+<div>
+  <h1>date-pipes</h1>
+  This is a short date :- {{presentDate | date: 'shortDate' }} <br/> 
+  This is a medium date :- {{presentDate | date: 'mediumDate'}}<br/>
+  This is a long date :- {{presentDate | date: 'longDate'}}<br/>
+</div>
+<br>
+
+<div>
+  <h1>currency-pipes</h1>
+   Student Discount | Jeepney Fare: {{ a | currency: 'PHP' : 'symbol'}}<br/> 
+   Normal | Jeepney Fare: {{ b | currency: 'PHP' : 'symbol' }}<br/>
+   Normal | Jeepney Fare for 4 person: {{ b * 4 | currency: 'PHP' : 'symbol' }}<br/>
+</div>
+<br>
+
+<div>
+  <h1>decimal-pipes</h1>
+   Euler Number: {{ euler | number }}<br/> 
+   Rounded number: {{ euler | number: '1.0-0' }}<br/>
+   With digitsInfo and locale parameters specified: {{ euler | number: '4.1-5'}}<br/>
+</div>
+<br>
+
+<div>
+  <h1>json-pipes</h1>
+  Without JSON pipe: {{ data }}<br>
+  With JSON pipe: {{ data | json }}<br>
+</div>
+<br>
+
+<div>
+  <h1>percent-pipes</h1>
+   Euler Number Percentage: {{ euler | percent }}<br/> 
+   Parameter number Percentage: {{ euler | percent: '1.1-2' }}<br/>
+   With digitsInfo and locale parameters specified: {{ euler | percent: '4.1-5'}}<br/>
+</div>
+<br>
+
+<div>
+  <h1>slice-pipes</h1>
+   First 4 Letters: {{ str }}[0:4]: '{{ str | slice: 0 : 4 }}<br/> 
+   Last 4 Letters: {{ str }}[-4]: '{{ str | slice: -4 }}<br/>
+   Full letters: {{ str }}[-100]: '{{ str | slice: -100 }}<br/>
+</div>
+</body>
+</html>  

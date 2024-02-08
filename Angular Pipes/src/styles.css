@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100px;
+    background: rgb(2,73,26);
+    background: linear-gradient(90deg, rgba(2,73,26,0.9051995798319328) 7%, rgba(83,83,133,1) 50%, rgba(2,73,26,1) 100%);
+    text-align: center;
+    color: white;
+  }
+
+  
+  h1{
+    text-decoration: underline;
+  }
+

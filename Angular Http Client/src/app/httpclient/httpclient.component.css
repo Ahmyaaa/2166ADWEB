@@ -1,0 +1,14 @@
+table, tr, td{
+    border: solid;
+    padding: 10px;
+    font-size: large;
+}
+
+table{
+    width: 100%;
+    border-radius: collapse;
+}
+
+th{
+    font-style: bold;
+}

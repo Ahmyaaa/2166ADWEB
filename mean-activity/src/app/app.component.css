@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .input-group {
+    margin-bottom: 10px;
+  }
+  input[type="text"], button {
+    width: calc(35% - 10px);
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  thead {
+    background-color: #007bff;
+    color: #fff;
+  }
+  thead th, tbody td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  tbody tr:hover {
+    background-color: #f2f2f2;
+  }
+
+  .input-group input,
+  .input-group button {
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+  
+  /* Optional: to remove the margin from the last element */
+  .input-group input:last-child,
+  .input-group button:last-child {
+    margin-right: 0;
+  }
+  

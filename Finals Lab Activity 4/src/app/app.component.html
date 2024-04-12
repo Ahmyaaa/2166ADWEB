@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books Application</title>
+</head>
+<div class="background"></div>
+<body>
+  <div class="container">
+    <h1>📖Books Application</h1>
+    <div class="input-group">
+      <input id="newBook" placeholder="Title" style="margin-right: 10px;">
+      <input id="newDesc" placeholder="Description" style="margin-right: 10px;">
+      <input id="newPrice" placeholder="Book Price" style="margin-right: 10px;">
+      <button class= "addbook" (click)="addBook()">Add book</button>
+    </div>    
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let book of books">
+          <td>{{book.title}}</td>
+          <td>{{book.description}}</td>
+          <td>{{book.price}}</td>
+          <td><button class="delete-button" (click)="deleteBook(book.id)">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
